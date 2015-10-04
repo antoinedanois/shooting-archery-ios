@@ -1,0 +1,402 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		D5177C0E1BC166CD00ACCDFC /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5177C0D1BC166CD00ACCDFC /* AppDelegate.swift */; };
+		D5177C101BC166CD00ACCDFC /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5177C0F1BC166CD00ACCDFC /* ViewController.swift */; };
+		D5177C131BC166CD00ACCDFC /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D5177C111BC166CD00ACCDFC /* Main.storyboard */; };
+		D5177C151BC166CD00ACCDFC /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D5177C141BC166CD00ACCDFC /* Assets.xcassets */; };
+		D5177C181BC166CD00ACCDFC /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D5177C161BC166CD00ACCDFC /* LaunchScreen.storyboard */; };
+		D5177C231BC166CD00ACCDFC /* Shooting_ArcheryTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5177C221BC166CD00ACCDFC /* Shooting_ArcheryTests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		D5177C1F1BC166CD00ACCDFC /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D5177C021BC166CD00ACCDFC /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = D5177C091BC166CD00ACCDFC;
+			remoteInfo = "Shooting Archery";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		D5177C0A1BC166CD00ACCDFC /* Shooting Archery.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Shooting Archery.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		D5177C0D1BC166CD00ACCDFC /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		D5177C0F1BC166CD00ACCDFC /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		D5177C121BC166CD00ACCDFC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		D5177C141BC166CD00ACCDFC /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		D5177C171BC166CD00ACCDFC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		D5177C191BC166CD00ACCDFC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D5177C1E1BC166CD00ACCDFC /* Shooting ArcheryTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Shooting ArcheryTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		D5177C221BC166CD00ACCDFC /* Shooting_ArcheryTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Shooting_ArcheryTests.swift; sourceTree = "<group>"; };
+		D5177C241BC166CD00ACCDFC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		D5177C071BC166CD00ACCDFC /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D5177C1B1BC166CD00ACCDFC /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		D5177C011BC166CD00ACCDFC = {
+			isa = PBXGroup;
+			children = (
+				D5177C0C1BC166CD00ACCDFC /* Shooting Archery */,
+				D5177C211BC166CD00ACCDFC /* Shooting ArcheryTests */,
+				D5177C0B1BC166CD00ACCDFC /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		D5177C0B1BC166CD00ACCDFC /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				D5177C0A1BC166CD00ACCDFC /* Shooting Archery.app */,
+				D5177C1E1BC166CD00ACCDFC /* Shooting ArcheryTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		D5177C0C1BC166CD00ACCDFC /* Shooting Archery */ = {
+			isa = PBXGroup;
+			children = (
+				D5177C0D1BC166CD00ACCDFC /* AppDelegate.swift */,
+				D5177C0F1BC166CD00ACCDFC /* ViewController.swift */,
+				D5177C111BC166CD00ACCDFC /* Main.storyboard */,
+				D5177C141BC166CD00ACCDFC /* Assets.xcassets */,
+				D5177C161BC166CD00ACCDFC /* LaunchScreen.storyboard */,
+				D5177C191BC166CD00ACCDFC /* Info.plist */,
+			);
+			path = "Shooting Archery";
+			sourceTree = "<group>";
+		};
+		D5177C211BC166CD00ACCDFC /* Shooting ArcheryTests */ = {
+			isa = PBXGroup;
+			children = (
+				D5177C221BC166CD00ACCDFC /* Shooting_ArcheryTests.swift */,
+				D5177C241BC166CD00ACCDFC /* Info.plist */,
+			);
+			path = "Shooting ArcheryTests";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		D5177C091BC166CD00ACCDFC /* Shooting Archery */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D5177C271BC166CD00ACCDFC /* Build configuration list for PBXNativeTarget "Shooting Archery" */;
+			buildPhases = (
+				D5177C061BC166CD00ACCDFC /* Sources */,
+				D5177C071BC166CD00ACCDFC /* Frameworks */,
+				D5177C081BC166CD00ACCDFC /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Shooting Archery";
+			productName = "Shooting Archery";
+			productReference = D5177C0A1BC166CD00ACCDFC /* Shooting Archery.app */;
+			productType = "com.apple.product-type.application";
+		};
+		D5177C1D1BC166CD00ACCDFC /* Shooting ArcheryTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D5177C2A1BC166CD00ACCDFC /* Build configuration list for PBXNativeTarget "Shooting ArcheryTests" */;
+			buildPhases = (
+				D5177C1A1BC166CD00ACCDFC /* Sources */,
+				D5177C1B1BC166CD00ACCDFC /* Frameworks */,
+				D5177C1C1BC166CD00ACCDFC /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				D5177C201BC166CD00ACCDFC /* PBXTargetDependency */,
+			);
+			name = "Shooting ArcheryTests";
+			productName = "Shooting ArcheryTests";
+			productReference = D5177C1E1BC166CD00ACCDFC /* Shooting ArcheryTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		D5177C021BC166CD00ACCDFC /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0700;
+				ORGANIZATIONNAME = iutbmteprow;
+				TargetAttributes = {
+					D5177C091BC166CD00ACCDFC = {
+						CreatedOnToolsVersion = 7.0.1;
+					};
+					D5177C1D1BC166CD00ACCDFC = {
+						CreatedOnToolsVersion = 7.0.1;
+						TestTargetID = D5177C091BC166CD00ACCDFC;
+					};
+				};
+			};
+			buildConfigurationList = D5177C051BC166CD00ACCDFC /* Build configuration list for PBXProject "Shooting Archery" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = D5177C011BC166CD00ACCDFC;
+			productRefGroup = D5177C0B1BC166CD00ACCDFC /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				D5177C091BC166CD00ACCDFC /* Shooting Archery */,
+				D5177C1D1BC166CD00ACCDFC /* Shooting ArcheryTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		D5177C081BC166CD00ACCDFC /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D5177C181BC166CD00ACCDFC /* LaunchScreen.storyboard in Resources */,
+				D5177C151BC166CD00ACCDFC /* Assets.xcassets in Resources */,
+				D5177C131BC166CD00ACCDFC /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D5177C1C1BC166CD00ACCDFC /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		D5177C061BC166CD00ACCDFC /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D5177C101BC166CD00ACCDFC /* ViewController.swift in Sources */,
+				D5177C0E1BC166CD00ACCDFC /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D5177C1A1BC166CD00ACCDFC /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D5177C231BC166CD00ACCDFC /* Shooting_ArcheryTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		D5177C201BC166CD00ACCDFC /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = D5177C091BC166CD00ACCDFC /* Shooting Archery */;
+			targetProxy = D5177C1F1BC166CD00ACCDFC /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		D5177C111BC166CD00ACCDFC /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				D5177C121BC166CD00ACCDFC /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		D5177C161BC166CD00ACCDFC /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				D5177C171BC166CD00ACCDFC /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		D5177C251BC166CD00ACCDFC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		D5177C261BC166CD00ACCDFC /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		D5177C281BC166CD00ACCDFC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = "Shooting Archery/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.iutbmteprow.Shooting-Archery";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		D5177C291BC166CD00ACCDFC /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = "Shooting Archery/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.iutbmteprow.Shooting-Archery";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		D5177C2B1BC166CD00ACCDFC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = "Shooting ArcheryTests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.iutbmteprow.Shooting-ArcheryTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Shooting Archery.app/Shooting Archery";
+			};
+			name = Debug;
+		};
+		D5177C2C1BC166CD00ACCDFC /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = "Shooting ArcheryTests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.iutbmteprow.Shooting-ArcheryTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Shooting Archery.app/Shooting Archery";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		D5177C051BC166CD00ACCDFC /* Build configuration list for PBXProject "Shooting Archery" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D5177C251BC166CD00ACCDFC /* Debug */,
+				D5177C261BC166CD00ACCDFC /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		D5177C271BC166CD00ACCDFC /* Build configuration list for PBXNativeTarget "Shooting Archery" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D5177C281BC166CD00ACCDFC /* Debug */,
+				D5177C291BC166CD00ACCDFC /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		D5177C2A1BC166CD00ACCDFC /* Build configuration list for PBXNativeTarget "Shooting ArcheryTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D5177C2B1BC166CD00ACCDFC /* Debug */,
+				D5177C2C1BC166CD00ACCDFC /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = D5177C021BC166CD00ACCDFC /* Project object */;
+}
