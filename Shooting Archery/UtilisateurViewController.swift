@@ -8,13 +8,30 @@
 
 import UIKit
 
-class UtilisateurViewController: UIViewController {
+class UtilisateurViewController: UIViewController, UIPickerViewDelegate, UIPickerViewDataSource {
 
+    
+    @IBOutlet weak var textFieldNom: UITextField!
+    @IBOutlet weak var textFieldPrenom: UITextField!
+    
+    @IBOutlet weak var buttonAjouterUtilisateur: UIBarButtonItem!
+    
+    @IBOutlet weak var picherCategorieUtilisateur: UIPickerView!
+    
+    @IBOutlet weak var labelCategorie: UILabel!
+    var pickerData: [String] = [String]()
+    
     
     
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        self.picherCategorieUtilisateur.delegate = self
+        //self.pickerCategorie.dataSource = self
+        
+        pickerData = ["Poussin","Benjamin","Junior","Minime", "Cadet", "Junior", "Senior", "Vétéran", "Super-Vétéran"]
+
 
         // Do any additional setup after loading the view.
     }
@@ -24,6 +41,20 @@ class UtilisateurViewController: UIViewController {
         // Dispose of any resources that can be recreated.
     }
     
+    // The number of columns of data
+    func numberOfComponentsInPickerView(pickerView: UIPickerView) -> Int {
+        return 1
+    }
+    
+    // The number of rows of data
+    func pickerView(pickerView: UIPickerView, numberOfRowsInComponent component: Int) -> Int {
+        return pickerData.count
+    }
+    
+    // The data to return for the row and component (column) that's being passed in
+    func pickerView(pickerView: UIPickerView, titleForRow row: Int, forComponent component: Int) -> String? {
+        return pickerData[row]
+    }
 
     /*
     // MARK: - Navigation
@@ -40,6 +71,16 @@ class UtilisateurViewController: UIViewController {
         
     }
     
+    @IBAction func actionButtonAjouterUtilisateur(sender: AnyObject) {
+        labelCategorie.text = textFieldNom.text
+        
+    }
+    
+    
+    
+    
 
+    
+    
 
 }
