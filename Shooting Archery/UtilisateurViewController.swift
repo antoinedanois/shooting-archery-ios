@@ -28,12 +28,12 @@ class UtilisateurViewController: UIViewController, UIPickerViewDelegate, UIPicke
         super.viewDidLoad()
         
         self.picherCategorieUtilisateur.delegate = self
-        //self.pickerCategorie.dataSource = self
         
         pickerData = ["Poussin","Benjamin","Junior","Minime", "Cadet", "Junior", "Senior", "Vétéran", "Super-Vétéran"]
 
 
         // Do any additional setup after loading the view.
+        
     }
 
     override func didReceiveMemoryWarning() {

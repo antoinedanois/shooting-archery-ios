@@ -13,6 +13,7 @@
 		D5177C151BC166CD00ACCDFC /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D5177C141BC166CD00ACCDFC /* Assets.xcassets */; };
 		D5177C181BC166CD00ACCDFC /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D5177C161BC166CD00ACCDFC /* LaunchScreen.storyboard */; };
 		D5177C231BC166CD00ACCDFC /* Shooting_ArcheryTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5177C221BC166CD00ACCDFC /* Shooting_ArcheryTests.swift */; };
+		D58FB9791C0B4B6F00003754 /* NouvellePartieController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D58FB9781C0B4B6F00003754 /* NouvellePartieController.swift */; settings = {ASSET_TAGS = (); }; };
 		D5A93DD21BF4E1F600125B5B /* UtilisateurViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5A93DD11BF4E1F600125B5B /* UtilisateurViewController.swift */; settings = {ASSET_TAGS = (); }; };
 /* End PBXBuildFile section */
 
@@ -37,6 +38,7 @@
 		D5177C1E1BC166CD00ACCDFC /* Shooting ArcheryTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Shooting ArcheryTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		D5177C221BC166CD00ACCDFC /* Shooting_ArcheryTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Shooting_ArcheryTests.swift; sourceTree = "<group>"; };
 		D5177C241BC166CD00ACCDFC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D58FB9781C0B4B6F00003754 /* NouvellePartieController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NouvellePartieController.swift; sourceTree = "<group>"; };
 		D5A93DD11BF4E1F600125B5B /* UtilisateurViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UtilisateurViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -86,6 +88,7 @@
 				D5177C141BC166CD00ACCDFC /* Assets.xcassets */,
 				D5177C161BC166CD00ACCDFC /* LaunchScreen.storyboard */,
 				D5177C191BC166CD00ACCDFC /* Info.plist */,
+				D58FB9781C0B4B6F00003754 /* NouvellePartieController.swift */,
 			);
 			path = "Shooting Archery";
 			sourceTree = "<group>";
@@ -199,6 +202,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D58FB9791C0B4B6F00003754 /* NouvellePartieController.swift in Sources */,
 				D5A93DD21BF4E1F600125B5B /* UtilisateurViewController.swift in Sources */,
 				D5177C101BC166CD00ACCDFC /* ViewController.swift in Sources */,
 				D5177C0E1BC166CD00ACCDFC /* AppDelegate.swift in Sources */,
