@@ -27,17 +27,17 @@ class NouvellePartieController: UIViewController, UIPickerViewDelegate, UIPicker
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        picketJoueur1.dataSource = self
-        picketJoueur2.dataSource = self
-        picketJoueur3.dataSource = self
-        picketJoueur4.dataSource = self
+        picketJoueur1.delegate = self
+        picketJoueur2.delegate = self
+        picketJoueur3.delegate = self
+        picketJoueur4.delegate = self
         
         picketJoueur1.tag = 1
         picketJoueur2.tag = 2
         picketJoueur3.tag = 3
         picketJoueur4.tag = 4
         
-        pickerData = ["Michel","Jean-Paul","Robert","Gérard", "Paul", "Jacky"]
+        pickerData = []
 
         
         labelJoueur2.hidden = true;
@@ -50,6 +50,22 @@ class NouvellePartieController: UIViewController, UIPickerViewDelegate, UIPicker
         picketJoueur4.hidden = true;
         
         // Do any additional setup after loading the view.
+        
+        
+        let db = SQLiteDB.sharedInstance()
+
+        
+        
+        let dataSelect = db.query("SELECT * FROM utilisateur")
+        
+        
+        for row in dataSelect
+        {
+            pickerData.append(row["nom"] as! String)
+        }
+        
+        
+    
     }
 
     override func didReceiveMemoryWarning() {
@@ -65,9 +81,7 @@ class NouvellePartieController: UIViewController, UIPickerViewDelegate, UIPicker
     // The number of rows of data
     func pickerView(pickerView: UIPickerView, numberOfRowsInComponent component: Int) -> Int {
         
-        
             return pickerData.count
-        
         
     }
     
@@ -76,7 +90,7 @@ class NouvellePartieController: UIViewController, UIPickerViewDelegate, UIPicker
         
         
         
-        if(pickerView.tag == 1){
+        if(pickerView == picketJoueur1){
             return pickerData[row]
         }else if(pickerView.tag == 2){
             return pickerData[row]

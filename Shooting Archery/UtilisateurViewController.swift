@@ -29,10 +29,13 @@ class UtilisateurViewController: UIViewController, UIPickerViewDelegate, UIPicke
         
         self.picherCategorieUtilisateur.delegate = self
         
+        
+        
         pickerData = ["Poussin","Benjamin","Junior","Minime", "Cadet", "Junior", "Senior", "Vétéran", "Super-Vétéran"]
 
 
         // Do any additional setup after loading the view.
+        
         
     }
 
@@ -72,7 +75,40 @@ class UtilisateurViewController: UIViewController, UIPickerViewDelegate, UIPicke
     }
     
     @IBAction func actionButtonAjouterUtilisateur(sender: AnyObject) {
-        labelCategorie.text = textFieldNom.text
+        //labelCategorie.text = textFieldNom.text
+        
+        
+        let db = SQLiteDB.sharedInstance()
+        
+        let nom = textFieldNom.text
+        let prenom = textFieldPrenom.text
+        
+        let selectedcategorie = pickerData[picherCategorieUtilisateur.selectedRowInComponent(0)]
+        
+        let query1 = "INSERT INTO utilisateur ('nom', 'prenom', 'categorie') VALUES (' " + nom! +  " ', ' "
+        let query2 = prenom! + "', ' " + selectedcategorie +  "')"
+        
+        
+        let query = query1 + query2
+        
+        let data = db.query(query)
+        
+        
+        let dataSelect = db.query("SELECT * FROM utilisateur")
+        let row = dataSelect[3]
+        if let name = row["nom"] {
+            let prenom2 = row["prenom"] as! String
+            let categorie2 = row["categorie"] as! String
+            labelCategorie.text = name as! String + " " + prenom2 + " " + categorie2
+        }
+
+        
+        
+
+        
+                
+
+        
         
     }
     

@@ -13,6 +13,12 @@
 		D5177C151BC166CD00ACCDFC /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D5177C141BC166CD00ACCDFC /* Assets.xcassets */; };
 		D5177C181BC166CD00ACCDFC /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D5177C161BC166CD00ACCDFC /* LaunchScreen.storyboard */; };
 		D5177C231BC166CD00ACCDFC /* Shooting_ArcheryTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5177C221BC166CD00ACCDFC /* Shooting_ArcheryTests.swift */; };
+		D53FCF0F1C0C59220026BC5B /* ChoixCibleController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D53FCF0E1C0C59220026BC5B /* ChoixCibleController.swift */; settings = {ASSET_TAGS = (); }; };
+		D55580A41C0EE9CF0002B1F3 /* libsqlite3.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = D55580A21C0EE9CF0002B1F3 /* libsqlite3.dylib */; };
+		D55580A51C0EE9CF0002B1F3 /* libz.1.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = D55580A31C0EE9CF0002B1F3 /* libz.1.dylib */; };
+		D55580AA1C0EEA1B0002B1F3 /* SQLiteDB.swift in Sources */ = {isa = PBXBuildFile; fileRef = D55580A71C0EEA1B0002B1F3 /* SQLiteDB.swift */; settings = {ASSET_TAGS = (); }; };
+		D55580AB1C0EEA1B0002B1F3 /* SQLTable.swift in Sources */ = {isa = PBXBuildFile; fileRef = D55580A81C0EEA1B0002B1F3 /* SQLTable.swift */; settings = {ASSET_TAGS = (); }; };
+		D55580AC1C0EEA1B0002B1F3 /* String-Extras.swift in Sources */ = {isa = PBXBuildFile; fileRef = D55580A91C0EEA1B0002B1F3 /* String-Extras.swift */; settings = {ASSET_TAGS = (); }; };
 		D58FB9791C0B4B6F00003754 /* NouvellePartieController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D58FB9781C0B4B6F00003754 /* NouvellePartieController.swift */; settings = {ASSET_TAGS = (); }; };
 		D5A93DD21BF4E1F600125B5B /* UtilisateurViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5A93DD11BF4E1F600125B5B /* UtilisateurViewController.swift */; settings = {ASSET_TAGS = (); }; };
 /* End PBXBuildFile section */
@@ -38,8 +44,16 @@
 		D5177C1E1BC166CD00ACCDFC /* Shooting ArcheryTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Shooting ArcheryTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		D5177C221BC166CD00ACCDFC /* Shooting_ArcheryTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Shooting_ArcheryTests.swift; sourceTree = "<group>"; };
 		D5177C241BC166CD00ACCDFC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D53FCF0E1C0C59220026BC5B /* ChoixCibleController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ChoixCibleController.swift; path = ../ChoixCibleController.swift; sourceTree = "<group>"; };
+		D55580A21C0EE9CF0002B1F3 /* libsqlite3.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libsqlite3.dylib; path = ../../../../usr/lib/libsqlite3.dylib; sourceTree = "<group>"; };
+		D55580A31C0EE9CF0002B1F3 /* libz.1.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libz.1.dylib; path = ../../../../usr/lib/libz.1.dylib; sourceTree = "<group>"; };
+		D55580A61C0EEA1B0002B1F3 /* Bridging-Header.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "Bridging-Header.h"; path = "../../../Desktop/SQLiteDB-master/Bridging-Header.h"; sourceTree = "<group>"; };
+		D55580A71C0EEA1B0002B1F3 /* SQLiteDB.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = SQLiteDB.swift; path = "../../../Desktop/SQLiteDB-master/SQLiteDB.swift"; sourceTree = "<group>"; };
+		D55580A81C0EEA1B0002B1F3 /* SQLTable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = SQLTable.swift; path = "../../../Desktop/SQLiteDB-master/SQLTable.swift"; sourceTree = "<group>"; };
+		D55580A91C0EEA1B0002B1F3 /* String-Extras.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = "String-Extras.swift"; path = "../../../Desktop/SQLiteDB-master/String-Extras.swift"; sourceTree = "<group>"; };
 		D58FB9781C0B4B6F00003754 /* NouvellePartieController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NouvellePartieController.swift; sourceTree = "<group>"; };
 		D5A93DD11BF4E1F600125B5B /* UtilisateurViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UtilisateurViewController.swift; sourceTree = "<group>"; };
+		D5F2B7FA1C109275006AEFF0 /* data.db */ = {isa = PBXFileReference; lastKnownFileType = file; name = data.db; path = ../../../Desktop/data.db; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -47,6 +61,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D55580A41C0EE9CF0002B1F3 /* libsqlite3.dylib in Frameworks */,
+				D55580A51C0EE9CF0002B1F3 /* libz.1.dylib in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -63,6 +79,8 @@
 		D5177C011BC166CD00ACCDFC = {
 			isa = PBXGroup;
 			children = (
+				D55580A21C0EE9CF0002B1F3 /* libsqlite3.dylib */,
+				D55580A31C0EE9CF0002B1F3 /* libz.1.dylib */,
 				D5177C0C1BC166CD00ACCDFC /* Shooting Archery */,
 				D5177C211BC166CD00ACCDFC /* Shooting ArcheryTests */,
 				D5177C0B1BC166CD00ACCDFC /* Products */,
@@ -81,7 +99,14 @@
 		D5177C0C1BC166CD00ACCDFC /* Shooting Archery */ = {
 			isa = PBXGroup;
 			children = (
+				D5F2B7FA1C109275006AEFF0 /* data.db */,
+				D55580A61C0EEA1B0002B1F3 /* Bridging-Header.h */,
+				D55580A71C0EEA1B0002B1F3 /* SQLiteDB.swift */,
+				D55580A81C0EEA1B0002B1F3 /* SQLTable.swift */,
+				D55580A91C0EEA1B0002B1F3 /* String-Extras.swift */,
+				D53FCF101C0C5BB00026BC5B /* images */,
 				D5177C0D1BC166CD00ACCDFC /* AppDelegate.swift */,
+				D53FCF0E1C0C59220026BC5B /* ChoixCibleController.swift */,
 				D5177C0F1BC166CD00ACCDFC /* ViewController.swift */,
 				D5177C111BC166CD00ACCDFC /* Main.storyboard */,
 				D5A93DD11BF4E1F600125B5B /* UtilisateurViewController.swift */,
@@ -100,6 +125,13 @@
 				D5177C241BC166CD00ACCDFC /* Info.plist */,
 			);
 			path = "Shooting ArcheryTests";
+			sourceTree = "<group>";
+		};
+		D53FCF101C0C5BB00026BC5B /* images */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = images;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -203,9 +235,13 @@
 			buildActionMask = 2147483647;
 			files = (
 				D58FB9791C0B4B6F00003754 /* NouvellePartieController.swift in Sources */,
+				D55580AB1C0EEA1B0002B1F3 /* SQLTable.swift in Sources */,
 				D5A93DD21BF4E1F600125B5B /* UtilisateurViewController.swift in Sources */,
+				D55580AC1C0EEA1B0002B1F3 /* String-Extras.swift in Sources */,
+				D53FCF0F1C0C59220026BC5B /* ChoixCibleController.swift in Sources */,
 				D5177C101BC166CD00ACCDFC /* ViewController.swift in Sources */,
 				D5177C0E1BC166CD00ACCDFC /* AppDelegate.swift in Sources */,
+				D55580AA1C0EEA1B0002B1F3 /* SQLiteDB.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -338,6 +374,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.iutbmteprow.Shooting-Archery";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "/Users/antoinedanois/Desktop/SQLiteDB-master/Bridging-Header.h";
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
@@ -350,6 +387,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.iutbmteprow.Shooting-Archery";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "/Users/antoinedanois/Desktop/SQLiteDB-master/Bridging-Header.h";
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Release;
