@@ -95,12 +95,15 @@ class UtilisateurViewController: UIViewController, UIPickerViewDelegate, UIPicke
         
         
         let dataSelect = db.query("SELECT * FROM utilisateur")
-        let row = dataSelect[3]
+        
+        
+        
+        /*let row = dataSelect[0]
         if let name = row["nom"] {
             let prenom2 = row["prenom"] as! String
             let categorie2 = row["categorie"] as! String
             labelCategorie.text = name as! String + " " + prenom2 + " " + categorie2
-        }
+        }*/
 
         
         

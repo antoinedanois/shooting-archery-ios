@@ -10,6 +10,9 @@ import UIKit
 
 class NouvellePartieController: UIViewController, UIPickerViewDelegate, UIPickerViewDataSource {
 
+    
+    @IBOutlet weak var buttonSave: UIButton!
+    @IBOutlet weak var buttonContinuer: UIBarButtonItem!
     @IBOutlet weak var sliderNbJoueur: UISlider!
     @IBOutlet weak var buttonCancel: UIBarButtonItem!
     @IBOutlet weak var labelNbJoueur: UILabel!
@@ -21,6 +24,12 @@ class NouvellePartieController: UIViewController, UIPickerViewDelegate, UIPicker
     @IBOutlet weak var picketJoueur2: UIPickerView!
     @IBOutlet weak var picketJoueur3: UIPickerView!
     @IBOutlet weak var picketJoueur4: UIPickerView!
+    
+    var valueSlider = 0
+    
+    let data = DataSingleton.sharedInstance()
+    
+    
     
     var pickerData: [String] = [String]()
     
@@ -61,7 +70,10 @@ class NouvellePartieController: UIViewController, UIPickerViewDelegate, UIPicker
         
         for row in dataSelect
         {
-            pickerData.append(row["nom"] as! String)
+            print(row["nom"] as! String)
+            if(row["nom"] as! String != "  "){
+                pickerData.append(row["nom"] as! String)
+            }
         }
         
         
@@ -122,6 +134,7 @@ class NouvellePartieController: UIViewController, UIPickerViewDelegate, UIPicker
     }
     @IBAction func sliderValueChanger(sender: AnyObject) {
         self.labelNbJoueur.text = "\(Int(round(sliderNbJoueur.value)))"
+        valueSlider = Int(round(sliderNbJoueur.value))
         
         labelJoueur2.hidden = true;
         picketJoueur2.hidden = true;
@@ -132,7 +145,9 @@ class NouvellePartieController: UIViewController, UIPickerViewDelegate, UIPicker
         labelJoueur4.hidden = true;
         picketJoueur4.hidden = true;
         
-        switch(Int(round(sliderNbJoueur.value))){
+        
+                
+        switch(valueSlider){
             
         case 1:
             
@@ -176,4 +191,43 @@ class NouvellePartieController: UIViewController, UIPickerViewDelegate, UIPicker
         
         
     }
+    
+    @IBAction func sauvegarderButton(sender: AnyObject) {
+        data.setNbJoueur(valueSlider)
+        
+        print("prout")
+        
+        let selectedNomJoueur1 = pickerData[picketJoueur1.selectedRowInComponent(0)]
+        let selectedNomJoueur2 = pickerData[picketJoueur2.selectedRowInComponent(0)]
+        let selectedNomJoueur3 = pickerData[picketJoueur3.selectedRowInComponent(0)]
+        let selectedNomJoueur4 = pickerData[picketJoueur4.selectedRowInComponent(0)]
+        
+        
+        if(valueSlider == 1){
+            
+            data.setNomJoueurUn(selectedNomJoueur1)
+        }else if(valueSlider == 2){
+            data.setNomJoueurUn(selectedNomJoueur1)
+            data.setNomJoueurDeux(selectedNomJoueur2)
+        }else if(valueSlider == 3){
+            data.setNomJoueurUn(selectedNomJoueur1)
+            data.setNomJoueurDeux(selectedNomJoueur2)
+            data.setNomJoueurTrois(selectedNomJoueur3)
+        }else if(valueSlider == 4){
+            data.setNomJoueurUn(selectedNomJoueur1)
+            data.setNomJoueurDeux(selectedNomJoueur2)
+            data.setNomJoueurTrois(selectedNomJoueur3)
+            data.setNomJoueurQuatre(selectedNomJoueur4)
+        }
+        
+        
+        
+    }
+    
+    
+    
+    
+    
+    
+    
 }
