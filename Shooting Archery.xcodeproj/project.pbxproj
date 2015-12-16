@@ -21,6 +21,9 @@
 		D55580AB1C0EEA1B0002B1F3 /* SQLTable.swift in Sources */ = {isa = PBXBuildFile; fileRef = D55580A81C0EEA1B0002B1F3 /* SQLTable.swift */; settings = {ASSET_TAGS = (); }; };
 		D55580AC1C0EEA1B0002B1F3 /* String-Extras.swift in Sources */ = {isa = PBXBuildFile; fileRef = D55580A91C0EEA1B0002B1F3 /* String-Extras.swift */; settings = {ASSET_TAGS = (); }; };
 		D58FB9791C0B4B6F00003754 /* NouvellePartieController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D58FB9781C0B4B6F00003754 /* NouvellePartieController.swift */; settings = {ASSET_TAGS = (); }; };
+		D59CB44F1C21703F00C2D877 /* classique.png in Resources */ = {isa = PBXBuildFile; fileRef = D59CB44E1C21703F00C2D877 /* classique.png */; settings = {ASSET_TAGS = (); }; };
+		D59CB4511C2170DB00C2D877 /* trispot.png in Resources */ = {isa = PBXBuildFile; fileRef = D59CB4501C2170DB00C2D877 /* trispot.png */; settings = {ASSET_TAGS = (); }; };
+		D59CB4531C2170E600C2D877 /* gazspot.png in Resources */ = {isa = PBXBuildFile; fileRef = D59CB4521C2170E600C2D877 /* gazspot.png */; settings = {ASSET_TAGS = (); }; };
 		D5A93DD21BF4E1F600125B5B /* UtilisateurViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5A93DD11BF4E1F600125B5B /* UtilisateurViewController.swift */; settings = {ASSET_TAGS = (); }; };
 		D5D6B4A01C1487F200B6B8C8 /* SupprimerUtilisateurViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5D6B49F1C1487F200B6B8C8 /* SupprimerUtilisateurViewController.swift */; settings = {ASSET_TAGS = (); }; };
 /* End PBXBuildFile section */
@@ -55,6 +58,9 @@
 		D55580A81C0EEA1B0002B1F3 /* SQLTable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = SQLTable.swift; path = "../../../Desktop/SQLiteDB-master/SQLTable.swift"; sourceTree = "<group>"; };
 		D55580A91C0EEA1B0002B1F3 /* String-Extras.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = "String-Extras.swift"; path = "../../../Desktop/SQLiteDB-master/String-Extras.swift"; sourceTree = "<group>"; };
 		D58FB9781C0B4B6F00003754 /* NouvellePartieController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NouvellePartieController.swift; sourceTree = "<group>"; };
+		D59CB44E1C21703F00C2D877 /* classique.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = classique.png; path = "../../../AndroidStudioProjects/ShootingArchery/app/src/main/res/drawable-hdpi/classique.png"; sourceTree = "<group>"; };
+		D59CB4501C2170DB00C2D877 /* trispot.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = trispot.png; path = "../../../AndroidStudioProjects/ShootingArchery/app/src/main/res/drawable-hdpi/trispot.png"; sourceTree = "<group>"; };
+		D59CB4521C2170E600C2D877 /* gazspot.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = gazspot.png; path = "../../../AndroidStudioProjects/ShootingArchery/app/src/main/res/drawable-hdpi/gazspot.png"; sourceTree = "<group>"; };
 		D5A93DD11BF4E1F600125B5B /* UtilisateurViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UtilisateurViewController.swift; sourceTree = "<group>"; };
 		D5D6B49F1C1487F200B6B8C8 /* SupprimerUtilisateurViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SupprimerUtilisateurViewController.swift; sourceTree = "<group>"; };
 		D5F2B7FA1C109275006AEFF0 /* data.db */ = {isa = PBXFileReference; lastKnownFileType = file; name = data.db; path = ../../../Desktop/data.db; sourceTree = "<group>"; };
@@ -136,6 +142,9 @@
 		D53FCF101C0C5BB00026BC5B /* images */ = {
 			isa = PBXGroup;
 			children = (
+				D59CB4521C2170E600C2D877 /* gazspot.png */,
+				D59CB4501C2170DB00C2D877 /* trispot.png */,
+				D59CB44E1C21703F00C2D877 /* classique.png */,
 			);
 			name = images;
 			sourceTree = "<group>";
@@ -222,6 +231,9 @@
 			files = (
 				D5177C181BC166CD00ACCDFC /* LaunchScreen.storyboard in Resources */,
 				D5177C151BC166CD00ACCDFC /* Assets.xcassets in Resources */,
+				D59CB4531C2170E600C2D877 /* gazspot.png in Resources */,
+				D59CB44F1C21703F00C2D877 /* classique.png in Resources */,
+				D59CB4511C2170DB00C2D877 /* trispot.png in Resources */,
 				D5177C131BC166CD00ACCDFC /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

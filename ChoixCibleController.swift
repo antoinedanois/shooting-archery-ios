@@ -8,7 +8,7 @@
 
 import UIKit
 
-class ChoixCibleController: UIViewController {
+class ChoixCibleController: UIViewController, UIPickerViewDelegate, UIPickerViewDataSource {
 
     
     
@@ -16,6 +16,11 @@ class ChoixCibleController: UIViewController {
     @IBOutlet weak var labelJoueurUn: UILabel!
     @IBOutlet weak var buttonRetour: UIBarButtonItem!
     
+    @IBOutlet weak var pickerTailleCible: UIPickerView!
+    @IBOutlet weak var pickerCondition: UIPickerView!
+    
+    var pickerDataCondition: [String] = [String]()
+    var pickerDataTaille: [String] = [String]()
     
     var joueurUn = ""
     var joueurDeux = ""
@@ -34,26 +39,28 @@ class ChoixCibleController: UIViewController {
         joueurUn = data.getNomJoueurUn()
         print(nbJoueur)
         
+        self.pickerCondition.delegate = self
+        self.pickerTailleCible.delegate = self
+        
+        pickerCondition.tag = 1
+        pickerTailleCible.tag = 2
         
         
-            var reponse = db.query("SELECT * FROM utilisateur WHERE nom='" + joueurUn + "'")
-            let row = reponse[0]
+        pickerDataCondition = ["Compétition", "Entrainement"]
+        pickerDataTaille = ["40", "60"]
+        
+        
+        var reponse = db.query("SELECT * FROM utilisateur WHERE nom='" + joueurUn + "'")
+        
+        let row = reponse[0]
             
-            let nom = row["nom"] as! String
+        let nom = row["nom"] as! String
             
-            let prenom = row["prenom"] as! String
+        let prenom = row["prenom"] as! String
             
-            labelJoueurUn.text = "Bonjour " + prenom + " " + nom
+        labelJoueurUn.text = "Bonjour" + prenom + "" + nom
 
-        
-        
-        
-        
-        
-        
-        
 
-        
         // Do any additional setup after loading the view.
     }
 
@@ -75,5 +82,31 @@ class ChoixCibleController: UIViewController {
 
     @IBAction func buttonRetour(sender: AnyObject) {
         dismissViewControllerAnimated(true, completion: nil)
+    }
+    
+    // The number of columns of data
+    func numberOfComponentsInPickerView(pickerView: UIPickerView) -> Int {
+        return 1
+    }
+    
+    // The number of rows of data
+    func pickerView(pickerView: UIPickerView, numberOfRowsInComponent component: Int) -> Int {
+        
+        return pickerDataCondition.count
+        
+    }
+    
+    // The data to return for the row and component (column) that's being passed in
+    func pickerView(pickerView: UIPickerView, titleForRow row: Int, forComponent component: Int) -> String? {
+        
+        
+        
+        if(pickerView.tag == pickerCondition.tag){
+            return pickerDataCondition[row]
+        }else if(pickerView.tag == pickerTailleCible.tag){
+            return pickerDataTaille[row]
+        }else{
+            return "rien"
+        }
     }
 }
